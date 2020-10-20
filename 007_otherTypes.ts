@@ -1,10 +1,9 @@
 // Boolean
-
 // Boolean values are supported by both JavaScript and TypeScript and stored as true/false values
 let isPresent:boolean = true;
 
 // Tuple
-TypeScript introduced a new data type called Tuple. Tuple can contain two values of different data types.
+// TypeScript introduced a new data type called Tuple. Tuple can contain two values of different data types.
 
 var employee: [number, string] = [1, "Steve"];
 var person: [number, string, boolean] = [1, "Steve", true];
