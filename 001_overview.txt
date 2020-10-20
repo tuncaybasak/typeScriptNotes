@@ -1,0 +1,21 @@
+## Typescript ##
+
+TypeScript is an open-source object-oriented language developed and maintained by Microsoft.
+
+TypeScript extends JavaScript by adding data types, classes, and other object-oriented features with type-checking. 
+It is a typed superset of JavaScript that compiles to plain JavaScript.
+
+= Why TypeScript =
+
+JavaScript is a dynamic programming language with no type system. JavaScript provides primitive types like string, number, object, etc., 
+but it doesn't check assigned values.
+
+The type system increases the code quality, readability and makes it easy to maintain and refactor codebase. 
+More importantly, errors can be caught at compile time rather than at runtime.
+
+Hence, the reason to use TypeScript is that it catches errors at compile-time, so that you can fix it before you run code. 
+It supports object-oriented programming features like data types, classes, enums, etc.
+
+TypeScript compiles into simple JavaScript.
+
+
