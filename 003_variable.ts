@@ -12,7 +12,6 @@ let employeeName = "John";
 // or 
 let employeeName:string = "John";
 
-
 // Advantages of using let over var
 
 // 1 Block-scoped let variables cannot be read or written to before they are declared.
@@ -42,5 +41,10 @@ function demo() {
 console.log(num); //Output: 1
 demo();
 
+// Const
 
+// Variables can be declared using const similar to var or let declarations. The const makes a variable a constant where its value cannot be changed. 
+// Const variables have the same scoping rules as let variables.
 
+const num:number = 100;
+num = 200; //Compiler Error: Cannot assign to 'num' because it is a constant or read-only property
