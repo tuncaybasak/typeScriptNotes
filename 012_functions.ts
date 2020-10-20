@@ -80,3 +80,22 @@ function display(a:number): void //Compiler Error: Duplicate function implementa
 {
     console.log(a);
 }
+
+
+// == Rest Parameters ==
+
+// TypeScript introduced rest parameters to accommodate n number of parameters easily.
+// When the number of parameters that a function will receive is not known or can vary, we can use rest parameters
+
+function Greet(greeting: string, ...names: string[]) {
+  return greeting + " " + names.join(", ") + "!";
+}
+
+Greet("Hello", "Steve", "Bill"); // returns "Hello Steve, Bill!"
+
+Greet("Hello");// returns "Hello !"
+
+// Remember, rest parameters must come last in the function defination, otherwise the TypeScript compiler will show an error. The following is not valid.
+function Greet(...names: string[], greeting: string) {  // Compiler Error
+    return greeting + " " + names.join(", ") + "!";
+}
