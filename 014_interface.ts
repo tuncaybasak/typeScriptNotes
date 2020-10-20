@@ -135,29 +135,3 @@ class Employee implements IEmployee {
 }
 
 let emp = new Employee(1, "Steve");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
