@@ -21,46 +21,6 @@ let kv1: KeyPair = { key:1, value:"Steve" }; // OK
 let kv2: KeyPair = { key:1, val:"Steve" }; // Compiler Error: 'val' doesn't exist in type 'KeyPair'
 let kv3: KeyPair = { key:1, value:100 }; // Compiler Error: 
 
-// Interface as Function Type
-// TypeScript interface is also used to define a type of a function. This ensures the function signature.
-
-interface KeyValueProcessor
-{
-    (key: number, value: string): void;
-};
-
-function addKeyValue(key:number, value:string):void { 
-    console.log('addKeyValue: key = ' + key + ', value = ' + value)
-}
-
-function updateKeyValue(key: number, value:string):void { 
-    console.log('updateKeyValue: key = '+ key + ', value = ' + value)
-}
-    
-let kvp: KeyValueProcessor = addKeyValue;
-kvp(1, 'Bill'); //Output: addKeyValue: key = 1, value = Bill 
-
-kvp = updateKeyValue;
-kvp(2, 'Steve'); //Output: updateKeyValue: key = 2, value = Steve 
-
-// Interface for Array Type
-// An interface can also define the type of an array where you can define the type of index as well as values.
-interface NumList {
-    [index:number]:number
-}
-
-let numArr: NumList = [1, 2, 3];
-numArr[0];
-numArr[1];
-
-interface IStringList {
-    [index:string]:string
-}
-
-let strArr : IStringList;
-strArr["TS"] = "TypeScript";
-strArr["JS"] = "JavaScript";
-
 // Optional Property
 // Sometimes, we may declare an interface with excess properties but may not expect all objects to define all the given interface properties. 
 // We can have optional properties, marked with a "?". In such cases, objects of the interface may or may not define these properties.
@@ -135,3 +95,43 @@ class Employee implements IEmployee {
 }
 
 let emp = new Employee(1, "Steve");
+
+// Interface as Function Type
+// TypeScript interface is also used to define a type of a function. This ensures the function signature.
+
+interface KeyValueProcessor
+{
+    (key: number, value: string): void;
+};
+
+function addKeyValue(key:number, value:string):void { 
+    console.log('addKeyValue: key = ' + key + ', value = ' + value)
+}
+
+function updateKeyValue(key: number, value:string):void { 
+    console.log('updateKeyValue: key = '+ key + ', value = ' + value)
+}
+    
+let kvp: KeyValueProcessor = addKeyValue;
+kvp(1, 'Bill'); //Output: addKeyValue: key = 1, value = Bill 
+
+kvp = updateKeyValue;
+kvp(2, 'Steve'); //Output: updateKeyValue: key = 2, value = Steve 
+
+// Interface for Array Type
+// An interface can also define the type of an array where you can define the type of index as well as values.
+interface NumList {
+    [index:number]:number
+}
+
+let numArr: NumList = [1, 2, 3];
+numArr[0];
+numArr[1];
+
+interface IStringList {
+    [index:string]:string
+}
+
+let strArr : IStringList;
+strArr["TS"] = "TypeScript";
+strArr["JS"] = "JavaScript";
