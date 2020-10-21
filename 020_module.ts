@@ -6,8 +6,8 @@
 var greeting : string = "Hello World!";
 
 // file2.ts 
-// console.log(greeting); //Prints Hello World!
-// greeting = "Hello TypeScript"; // allowed
+console.log(greeting); //Prints Hello World!
+greeting = "Hello TypeScript"; // allowed
 
 // The above variable greeting, declared in file1.ts is accessible in file2.ts as well. Not only it is accessible but also it is open to modifications. 
 // Anybody can easily override variables declared in the global scope without even knowing they are doing so! 
@@ -22,8 +22,8 @@ var greeting : string = "Hello World!";
 export var greeting : string = "Hello World!";
 
 // file2.ts
-// console.log(greeting); //Error: cannot find 'greeting'
-// greeting = "Hello TypeScript"; 
+console.log(greeting); //Error: cannot find 'greeting'
+greeting = "Hello TypeScript"; 
 
 // Export
 // A module can be defined in a separate .ts file which can contain functions, variables, interfaces and classes. 
@@ -61,7 +61,6 @@ empObj.displayEmployee(); //Output: Employee Code: 2, Employee Name: Bill Gates
 
 // In the above example, we import all the exports in Employee module in a single variable called Emp. 
 // So, we don't need to write an export statement for each individual module.
-
 // Renaming an Export from a Module:
 // You can change the name of an export as shown below.
 
