@@ -28,3 +28,25 @@ let empObj:IEmployee = {
 }
 
 empObj.empCode = 100; // Compiler Error: Cannot change readonly 'empCode'
+
+// In the same way you can use Readonly<T> to create a readonly type, as shown below.
+interface IEmployee {
+    empCode: number;
+    empName: string;
+}
+
+let emp1: Readonly<IEmployee> = {
+    empCode:1,
+    empName:"Steve"
+}
+
+emp1.empCode = 100; // Compiler Error: Cannot change readonly 'empCode'
+emp1.empName = 'Bill'; // Compiler Error: Cannot change readonly 'empName'
+
+let emp2: IEmployee = {
+    empCode:1,
+    empName:"Steve"
+}
+
+emp2.empCode = 100; // OK
+emp2.empName = 'Bill'; // OK
