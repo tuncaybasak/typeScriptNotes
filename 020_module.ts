@@ -42,3 +42,37 @@ export class Employee {
     }
 }
 let companyName:string = "XYZ
+
+// Import
+// A module can be used in another module using an import statement.
+
+// Importing a Single export from a Module:
+import { Employee } from "./Employee";
+let empObj = new Employee("Steve Jobs", 1);
+empObj.displayEmployee(); //Output: Employee Code: 1, Employee Name: Steve Jobs  
+
+
+// Importing the Entire Module into a Variable
+import * as Emp from "./Employee"
+console.log(Emp.age); // 20
+
+let empObj = new Emp.Employee("Bill Gates" , 2);
+empObj.displayEmployee(); //Output: Employee Code: 2, Employee Name: Bill Gates
+
+// In the above example, we import all the exports in Employee module in a single variable called Emp. 
+// So, we don't need to write an export statement for each individual module.
+
+// Renaming an Export from a Module:
+// You can change the name of an export as shown below.
+
+import { Employee as Associate } from "./Employee"
+let obj = new Associate("James Bond" , 3);
+obj.displayEmployee();//Output: Employee Code: 3, Employee Name: James Bond
+
+
+
+
+
+
+
+
