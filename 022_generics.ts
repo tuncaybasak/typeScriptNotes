@@ -93,17 +93,3 @@ var per = new Person("Bill", "Gates");
 display(per); //Output: Bill Gates
 
 display("Bill Gates");//Compiler Error
-
-
-
-
-
-
-
-
-
-
-
-
-
-
