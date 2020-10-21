@@ -1,6 +1,7 @@
 // Tutorials
 https://www.tutorialsteacher.com/typescript
 https://www.typescriptlang.org/docs/handbook/intro.html
+https://rmolinamir.github.io/typescript-cheatsheet/
 
 // Articles
 https://medium.com/javascript-in-plain-english/when-to-best-use-type-class-or-interface-in-typescript-73bf66de19e9
